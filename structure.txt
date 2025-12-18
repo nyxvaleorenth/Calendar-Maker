@@ -1,0 +1,15 @@
+set up constants: days, months
+get data: year, month
+draw the calendar:
+    1. month and year
+    2. week days
+    3. date
+        set date to first day of the month
+        keep rolling back until saturday
+    4. keeping looping until the month change
+        add a horizontal separator
+        loop 7 times for dayNumberRow
+            add the day number with rjust 2
+            add '|' at the beginning, the day number, and 8 " "
+        add '|' at the end
+        add 3 blankRow
